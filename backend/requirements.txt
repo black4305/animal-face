@@ -1,6 +1,6 @@
 mediapipe==0.10.21
 numpy==1.26.4
-Pillow==11.1.0
+Pillow==12.1.1
 # NOTE: psycopg2-binary is used for Lambda deployment convenience.
 # For production with custom Lambda layers, consider psycopg2 (source build).
 psycopg2-binary==2.9.10
