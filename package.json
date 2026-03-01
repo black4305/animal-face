@@ -1,0 +1,14 @@
+{
+  "name": "animal-face",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Animal Face Test - AI-powered animal face matching",
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@vercel/node": "^4.0.0",
+    "typescript": "~5.9.3"
+  }
+}

@@ -17,7 +17,8 @@ export interface Stats {
   animalCounts: Record<string, number>;
 }
 
-const API_BASE_URL = import.meta.env.VITE_API_URL as string | undefined;
+const API_BASE_URL = (import.meta.env.VITE_API_URL as string | undefined) ?? "/api";
+const USE_MOCK = import.meta.env.VITE_MOCK === "true";
 
 function generateMockResult(): AnalysisResult {
   const shuffled = [...animals].sort(() => Math.random() - 0.5);
@@ -70,7 +71,7 @@ async function parseError(res: Response): Promise<string> {
 }
 
 export async function analyzeImage(file: File, signal?: AbortSignal): Promise<AnalysisResult> {
-  if (!API_BASE_URL) {
+  if (USE_MOCK) {
     await delay(3000);
     return generateMockResult();
   }
@@ -78,10 +79,15 @@ export async function analyzeImage(file: File, signal?: AbortSignal): Promise<An
   const formData = new FormData();
   formData.append("image", file);
 
+  const timeoutSignal = AbortSignal.timeout(30000);
+  const combinedSignal = signal
+    ? AbortSignal.any([signal, timeoutSignal])
+    : timeoutSignal;
+
   const res = await fetch(`${API_BASE_URL}/analyze`, {
     method: "POST",
     body: formData,
-    signal,
+    signal: combinedSignal,
   });
 
   if (!res.ok) {
@@ -92,12 +98,14 @@ export async function analyzeImage(file: File, signal?: AbortSignal): Promise<An
 }
 
 export async function getStats(): Promise<Stats> {
-  if (!API_BASE_URL) {
+  if (USE_MOCK) {
     await delay(500);
     return generateMockStats();
   }
 
-  const res = await fetch(`${API_BASE_URL}/stats`);
+  const res = await fetch(`${API_BASE_URL}/stats`, {
+    signal: AbortSignal.timeout(10000),
+  });
 
   if (!res.ok) {
     throw new Error(await parseError(res));
