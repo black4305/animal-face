@@ -3,11 +3,6 @@
   "buildCommand": "cd frontend && npm run build",
   "outputDirectory": "frontend/dist",
   "functions": {
-    "api/analyze.py": {
-      "runtime": "@vercel/python@4.3.1",
-      "maxDuration": 30,
-      "memory": 1024
-    },
     "api/*.ts": {
       "maxDuration": 10
     }

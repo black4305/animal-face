@@ -2,6 +2,7 @@
   "name": "animal-face",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
   "description": "Animal Face Test - AI-powered animal face matching",
   "dependencies": {
     "@neondatabase/serverless": "^0.10.0"

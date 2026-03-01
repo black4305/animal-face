@@ -1,5 +1,6 @@
 import { useState, useCallback, useRef } from "react";
 import { analyzeImage, type AnalysisResult } from "@/lib/api";
+import { extractFeatures } from "@/lib/faceMesh";
 
 export type AnalysisStatus = "idle" | "uploading" | "analyzing" | "done" | "error";
 
@@ -39,7 +40,8 @@ export function useAnalysis() {
     setState((prev) => ({ ...prev, status: "analyzing" }));
 
     try {
-      const result = await analyzeImage(file, controller.signal);
+      const features = await extractFeatures(file);
+      const result = await analyzeImage(features, controller.signal);
       setState((prev) => ({ ...prev, status: "done", result }));
     } catch (err) {
       if (err instanceof Error && err.name === "AbortError") return;

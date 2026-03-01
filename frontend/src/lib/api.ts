@@ -1,4 +1,5 @@
 import { animals } from "@/data/animals";
+import type { FacialFeatures } from "@/lib/faceMesh";
 
 export interface AnimalMatch {
   id: string;
@@ -70,14 +71,11 @@ async function parseError(res: Response): Promise<string> {
   }
 }
 
-export async function analyzeImage(file: File, signal?: AbortSignal): Promise<AnalysisResult> {
+export async function analyzeImage(features: FacialFeatures, signal?: AbortSignal): Promise<AnalysisResult> {
   if (USE_MOCK) {
     await delay(3000);
     return generateMockResult();
   }
-
-  const formData = new FormData();
-  formData.append("image", file);
 
   const timeoutSignal = AbortSignal.timeout(30000);
   const combinedSignal = signal
@@ -86,7 +84,8 @@ export async function analyzeImage(file: File, signal?: AbortSignal): Promise<An
 
   const res = await fetch(`${API_BASE_URL}/analyze`, {
     method: "POST",
-    body: formData,
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ features }),
     signal: combinedSignal,
   });
 
