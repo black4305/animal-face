@@ -11,6 +11,13 @@
     <meta name="keywords" content="animal face test, what animal do I look like, animal look alike, face shape test, AI face analysis, 동물상 테스트, 동물 닮은꼴, 動物顔テスト, 动物脸测试, prueba de cara de animal, test visage animal, qué animal me parezco, which animal am I, animal face quiz" />
     <meta name="author" content="QuizLab" />
     <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="classification" content="Entertainment, AI Technology, Face Analysis" />
+    <meta name="topic" content="AI Animal Face Test" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+    <meta name="revisit-after" content="7 days" />
     <link rel="canonical" href="https://animal-face.quizlab.me/" />
 
     <!-- Hreflang - 16 languages -->
@@ -64,6 +71,11 @@
     <meta name="twitter:description" content="Upload your selfie and discover which animal you look like! Free AI-powered test with 12 animal types." />
     <meta name="twitter:image" content="https://animal-face.quizlab.me/og-image.png" />
 
+    <!-- Google / Search Engine (microdata) -->
+    <meta itemprop="name" content="What Animal Do I Look Like? - AI Animal Face Test" />
+    <meta itemprop="description" content="Upload your selfie and discover which of 12 animals you look like! Free AI-powered face analysis with personality traits and celebrity matches." />
+    <meta itemprop="image" content="https://animal-face.quizlab.me/og-image.png" />
+
     <!-- JSON-LD Structured Data: WebApplication -->
     <script type="application/ld+json">
     {
@@ -97,7 +109,11 @@
         "16 languages supported",
         "Free to use",
         "No image storage - privacy first"
-      ]
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".upload-section", ".result-summary", ".faq-section"]
+      }
     }
     </script>
 
@@ -147,6 +163,19 @@
             "text": "You can be matched with 12 animals: Dog (friendly and loyal), Cat (independent and mysterious), Fox (clever and charming), Bear (warm and reliable), Rabbit (cute and curious), Deer (graceful and artistic), Hamster (cheerful and hardworking), Wolf (charismatic leader), Penguin (funny and devoted), Owl (intellectual night owl), Squirrel (energetic and resourceful), or Dinosaur (unique and trendsetting)."
           }
         }
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://animal-face.quizlab.me/"},
+        {"@type": "ListItem", "position": 2, "name": "Result", "item": "https://animal-face.quizlab.me/result"},
+        {"@type": "ListItem", "position": 3, "name": "Stats", "item": "https://animal-face.quizlab.me/stats"}
       ]
     }
     </script>

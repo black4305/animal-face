@@ -18,7 +18,7 @@ export function ShareButtons({ topAnimalId }: ShareButtonsProps) {
   const { t } = useTranslation();
   const [copied, setCopied] = useState(false);
   const [instaCopied, setInstaCopied] = useState(false);
-  const shareUrl = typeof window !== "undefined" ? window.location.href : "https://animal-face-test.com";
+  const shareUrl = typeof window !== "undefined" ? window.location.href : "https://animal-face.quizlab.me";
 
   const animalName = t(`animals.${topAnimalId}.name`);
   const shareText = t("result.shareText", { animal: animalName });
