@@ -70,13 +70,13 @@ export function HomePage() {
         <meta property="og:title" content={t("seo.ogTitle")} />
         <meta property="og:description" content={t("seo.ogDescription")} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://animal-face.quizlab.io/og-image.png" />
-        <meta property="og:url" content="https://animal-face.quizlab.io/" />
+        <meta property="og:image" content="https://animal-face.quizlab.me/og-image.png" />
+        <meta property="og:url" content="https://animal-face.quizlab.me/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t("seo.twitterTitle")} />
         <meta name="twitter:description" content={t("seo.twitterDescription")} />
-        <meta name="twitter:image" content="https://animal-face.quizlab.io/og-image.png" />
-        <link rel="canonical" href="https://animal-face.quizlab.io/" />
+        <meta name="twitter:image" content="https://animal-face.quizlab.me/og-image.png" />
+        <link rel="canonical" href="https://animal-face.quizlab.me/" />
       </Helmet>
 
       <div className="relative min-h-[calc(100vh-3.5rem)] overflow-hidden">

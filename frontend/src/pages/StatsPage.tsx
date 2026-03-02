@@ -56,7 +56,7 @@ export function StatsPage() {
         <meta property="og:title" content={t("stats.statsOgTitle")} />
         <meta property="og:description" content={t("stats.statsOgDescription")} />
         <meta name="twitter:card" content="summary" />
-        <link rel="canonical" href="https://animal-face.quizlab.io/stats" />
+        <link rel="canonical" href="https://animal-face.quizlab.me/stats" />
       </Helmet>
 
       <div className="mx-auto max-w-2xl px-4 py-10">

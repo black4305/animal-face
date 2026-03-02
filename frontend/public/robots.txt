@@ -28,4 +28,4 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://animal-face.quizlab.io/sitemap.xml
+Sitemap: https://animal-face.quizlab.me/sitemap.xml
