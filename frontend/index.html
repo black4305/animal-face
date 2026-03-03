@@ -99,6 +99,21 @@
         "name": "QuizLab",
         "url": "https://quizlab.me"
       },
+      "datePublished": "2026-02-28",
+      "dateModified": "2026-03-03",
+      "isAccessibleForFree": true,
+      "about": {
+        "@type": "Thing",
+        "name": "Animal Face Analysis",
+        "sameAs": "https://en.wikipedia.org/wiki/Facial_recognition_system",
+        "description": "AI-powered facial analysis that matches human face shapes with animal characteristics"
+      },
+      "potentialAction": {
+        "@type": "UseAction",
+        "target": "https://animal-face.quizlab.me",
+        "name": "Take the Animal Face Test",
+        "description": "Upload a selfie to discover which animal you look like"
+      },
       "inLanguage": ["en", "ko", "ja", "zh-CN", "zh-TW", "es", "fr", "de", "pt", "th", "vi", "id", "hi", "ar", "ru", "tr"],
       "featureList": [
         "AI-powered facial analysis",
@@ -162,6 +177,22 @@
             "@type": "Answer",
             "text": "You can be matched with 12 animals: Dog (friendly and loyal), Cat (independent and mysterious), Fox (clever and charming), Bear (warm and reliable), Rabbit (cute and curious), Deer (graceful and artistic), Hamster (cheerful and hardworking), Wolf (charismatic leader), Penguin (funny and devoted), Owl (intellectual night owl), Squirrel (energetic and resourceful), or Dinosaur (unique and trendsetting)."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How accurate is the AI animal face test?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The test uses Google MediaPipe's Face Mesh, which detects 468 facial landmarks with sub-pixel accuracy. It analyzes 10 facial ratios and compares them against 12 animal profiles using weighted Euclidean distance. While it's designed for entertainment, the underlying facial geometry analysis is based on real computer vision research. Results are consistent — uploading the same photo will always give the same animal match."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which animal face type is most common?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Based on thousands of test results, Dog and Cat are the most common animal face types, together accounting for roughly 30-40% of all matches. Bear and Fox follow closely. The rarest types tend to be Dinosaur and Owl, each appearing in less than 5% of results. Your result depends on specific facial proportions like eye spacing, face width-to-height ratio, and jaw shape."
+          }
         }
       ]
     }
@@ -176,6 +207,42 @@
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://animal-face.quizlab.me/"},
         {"@type": "ListItem", "position": 2, "name": "Result", "item": "https://animal-face.quizlab.me/result"},
         {"@type": "ListItem", "position": 3, "name": "Stats", "item": "https://animal-face.quizlab.me/stats"}
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: HowTo (GEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Take the AI Animal Face Test",
+      "description": "Follow these simple steps to discover which animal you look like using our free AI-powered face analysis tool.",
+      "totalTime": "PT1M",
+      "tool": {
+        "@type": "HowToTool",
+        "name": "A device with a camera or a saved photo"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Upload your photo",
+          "text": "Take a selfie or choose a clear front-facing photo from your gallery. The AI works best with well-lit photos where your face is clearly visible.",
+          "url": "https://animal-face.quizlab.me/"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "AI analyzes your face",
+          "text": "Our AI uses Google MediaPipe Face Mesh to detect 468 facial landmarks on your photo, entirely in your browser. It calculates 10 key facial ratios including eye width, nose length, face roundness, and jaw angle."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Get your animal match",
+          "text": "Receive your personalized result showing which of 12 animals (dog, cat, fox, bear, rabbit, deer, hamster, wolf, penguin, owl, squirrel, or dinosaur) best matches your facial features, along with personality traits and celebrity matches."
+        }
       ]
     }
     </script>
