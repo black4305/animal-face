@@ -2,7 +2,11 @@
   "nav": {
     "home": "Home",
     "stats": "Stats",
-    "title": "Animal Face Test"
+    "title": "Animal Face Test",
+    "privacy": "Privacy Policy",
+    "terms": "Terms",
+    "about": "About",
+    "contact": "Contact"
   },
   "home": {
     "title": "What Animal Do I Look Like?",
@@ -152,5 +156,264 @@
     "boundaryTitle": "Something went wrong",
     "boundaryMessage": "An unexpected error occurred. Please try again.",
     "boundaryRetry": "Reload Page"
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "q1": "What animal do I look like?",
+    "a1": "The AI analyzes your facial features — including face shape, eye size, nose width, and jaw line — and matches them against 12 animal profiles: dog, cat, fox, bear, rabbit, deer, hamster, wolf, penguin, owl, squirrel, and dinosaur.",
+    "q2": "How does the AI animal face test work?",
+    "a2": "Your photo is processed entirely in your browser using MediaPipe FaceLandmarker, which maps 468 facial landmarks. These are converted into 10 proportional ratios that are compared against our animal profiles using weighted Euclidean distance. Your photo never leaves your device.",
+    "q3": "Is the animal face test free?",
+    "a3": "Yes, completely free. No sign-up, no account required. Just upload a photo and get your result instantly.",
+    "q4": "Is my photo stored or shared?",
+    "a4": "No. All face detection happens in your browser — your photo never reaches our servers. We only record the final animal match result (anonymously) for statistics.",
+    "q5": "What animals can I be matched with?",
+    "a5": "There are 12 possible animal matches: Dog, Cat, Fox, Bear, Rabbit, Deer, Hamster, Wolf, Penguin, Owl, Squirrel, and Dinosaur. Each result includes personality traits and celebrity look-alikes.",
+    "q6": "How accurate is the AI animal face test?",
+    "a6": "The test analyzes real facial geometry using 468 landmarks for entertainment purposes. Results are based on proportional similarities between your face and animal face archetypes — think of it as a fun personality mirror rather than a scientific measurement.",
+    "q7": "Which animal face type is most common?",
+    "a7": "Based on our global statistics, Dog and Cat face types tend to be the most common results, while Dinosaur is the rarest. Check our Stats page for live distribution data."
+  },
+  "cookie": {
+    "message": "We use cookies for analytics and advertising. By continuing, you agree to our cookie policy.",
+    "learnMore": "Privacy Policy",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "privacy": {
+    "pageTitle": "Privacy Policy - Animal Face Test",
+    "pageDescription": "Learn how Animal Face Test handles your data. Your photos never leave your device. We collect only anonymous analytics.",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 4, 2026",
+    "intro": {
+      "heading": "Introduction",
+      "body": "Animal Face Test (animal-face.quizlab.me), operated by QuizLab, is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and your rights regarding that information. By using this service, you agree to the practices described in this policy."
+    },
+    "photos": {
+      "heading": "Your Photos Stay on Your Device",
+      "body1": "All face analysis is performed entirely within your web browser using MediaPipe FaceLandmarker, a client-side AI library from Google. Your photo is processed locally and never transmitted to our servers at any point.",
+      "body2": "We do not store, view, or have access to any photographs you use with this service. Once you close your browser tab, all image data is discarded. No personally identifiable images are retained anywhere in our system."
+    },
+    "dataCollected": {
+      "heading": "Information We Collect",
+      "body": "When you complete an animal face analysis, we record the following anonymous technical data in our database for analytics and service improvement purposes:",
+      "ip": "IP address — used to estimate general geographic region and prevent abuse",
+      "userAgent": "User agent string — browser and device type for compatibility analytics",
+      "language": "Accept-Language header — to understand which languages our users speak",
+      "referer": "Referrer URL — to understand how users discover our service",
+      "country": "Country code — derived from your IP address for regional statistics",
+      "animalResult": "Animal match result — the animal type your face was matched to (e.g., \"dog\", \"cat\")"
+    },
+    "purpose": {
+      "heading": "How We Use This Information",
+      "body": "The anonymous data we collect is used solely for the following purposes:",
+      "analytics": "Generating the public statistics page showing animal type distribution",
+      "stats": "Understanding which languages and regions our service reaches",
+      "abuse": "Detecting and preventing automated abuse or excessive requests",
+      "improve": "Improving the service based on usage patterns"
+    },
+    "cookies": {
+      "heading": "Cookies and Advertising",
+      "body1": "We use cookies to support the operation of this website, including session management and preference storage (such as your selected language and color theme).",
+      "adsense": "This website displays advertisements served by Google AdSense. Google uses cookies (including the DoubleClick cookie) to serve personalized ads based on your interests and browsing history. Google's use of advertising cookies enables it and its partners to serve ads based on your visit to our site and other sites on the Internet.",
+      "optOut": "You can opt out of personalized advertising by visiting Google Ads Settings at https://adssettings.google.com, or by visiting the Network Advertising Initiative opt-out page. You may also install the Google Analytics Opt-out Browser Add-on to prevent data collection by Google Analytics."
+    },
+    "thirdParty": {
+      "heading": "Third-Party Services",
+      "body": "This service integrates with the following third-party providers, each governed by their own privacy policies:",
+      "google": "Google (MediaPipe, AdSense, Fonts) — Google's Privacy Policy applies to their services",
+      "neon": "Neon Serverless PostgreSQL — hosts our anonymous analytics database in Singapore (AWS ap-southeast-1)",
+      "vercel": "Vercel — provides hosting, CDN delivery, and serverless function execution",
+      "cloudflare": "Cloudflare — provides DNS resolution and DDoS protection at the network level"
+    },
+    "retention": {
+      "heading": "Data Retention",
+      "body1": "Anonymous analytics records (IP address, user agent, country, animal result) are retained indefinitely to support long-term statistical analysis. This data cannot be used to identify any individual user.",
+      "body2": "No photographs or personally identifiable information are stored. If you would like your analytics records removed, please contact us at contact@quizlab.me with the approximate date and time of your test and your IP address."
+    },
+    "rights": {
+      "heading": "Your Privacy Rights",
+      "body": "Depending on your location, you may have specific privacy rights. We are committed to honoring these rights upon verified request.",
+      "gdpr": {
+        "heading": "GDPR (European Union Users)",
+        "body": "If you are located in the European Union or European Economic Area, you have rights under the General Data Protection Regulation (GDPR), including: the right to access your data, the right to rectification, the right to erasure (the right to be forgotten), the right to restrict processing, and the right to data portability. To exercise these rights, contact us at contact@quizlab.me. We will respond within 30 days."
+      },
+      "ccpa": {
+        "heading": "CCPA (California Users)",
+        "body": "If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information is collected about you, the right to delete your personal information, and the right to opt out of the sale of your personal information. We do not sell personal information to third parties. To submit a data request, contact us at contact@quizlab.me."
+      }
+    },
+    "security": {
+      "heading": "Security",
+      "body": "We implement appropriate technical and organizational measures to protect the data we collect. Our database is hosted in a secure cloud environment with access controls. All data transmission between your browser and our servers uses HTTPS encryption. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security."
+    },
+    "children": {
+      "heading": "Children's Privacy",
+      "body": "This service is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at contact@quizlab.me and we will take steps to remove that information."
+    },
+    "changes": {
+      "heading": "Changes to This Policy",
+      "body": "We may update this Privacy Policy from time to time. When we do, we will update the \"Last updated\" date at the top of this page. We encourage you to review this policy periodically. Your continued use of the service after any changes constitutes your acceptance of the updated policy."
+    },
+    "contact": {
+      "heading": "Contact Us",
+      "body": "If you have any questions about this Privacy Policy or our data practices, or to exercise your privacy rights, please contact us at:"
+    }
+  },
+  "terms": {
+    "pageTitle": "Terms of Service - Animal Face Test",
+    "pageDescription": "Terms of Service for Animal Face Test. Entertainment-only AI face analysis service by QuizLab.",
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: March 4, 2026",
+    "acceptance": {
+      "heading": "Acceptance of Terms",
+      "body": "By accessing or using the Animal Face Test service at animal-face.quizlab.me, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using this service. These terms apply to all visitors, users, and others who access or use the service."
+    },
+    "entertainment": {
+      "heading": "Entertainment Purpose Only",
+      "body1": "The Animal Face Test is provided for entertainment and amusement purposes only. The AI analysis and animal match results are generated algorithmically based on facial geometry and are not intended to represent any scientific, psychological, or medical assessment of your appearance, personality, or characteristics.",
+      "body2": "Results should not be taken seriously or used as the basis for any personal, professional, or medical decisions. The animal match is a fun personality mirror, not a factual classification. Do not use this service as a substitute for professional advice of any kind."
+    },
+    "noWarranty": {
+      "heading": "No Warranty on Results",
+      "body1": "The service is provided on an \"as is\" and \"as available\" basis without any warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement.",
+      "body2": "We do not warrant that the service will be uninterrupted, error-free, or completely accurate. The AI model may produce results that vary based on photo quality, lighting, face angle, and other factors. We make no representations about the accuracy, reliability, or completeness of any analysis results."
+    },
+    "ip": {
+      "heading": "Intellectual Property",
+      "body1": "The Animal Face Test service, including its design, code, AI model weights, animal profile data, personality descriptions, and all associated content, is owned by QuizLab and is protected by applicable intellectual property laws. You may not copy, reproduce, modify, distribute, or create derivative works of any part of this service without our express written permission.",
+      "body2": "You retain full ownership of any photographs you use with this service. By using the service, you do not grant us any license to your photos — they are processed entirely in your browser and never transmitted to or stored on our servers."
+    },
+    "acceptableUse": {
+      "heading": "Acceptable Use",
+      "body": "You agree to use this service only for lawful purposes and in accordance with these Terms. You agree not to:",
+      "rule1": "Use any automated tool, bot, script, or spider to access or scrape the service",
+      "rule2": "Attempt to probe, scan, or test the vulnerability of the service or any related systems",
+      "rule3": "Attempt to interfere with or disrupt the integrity or performance of the service",
+      "rule4": "Use the service to transmit any harmful, offensive, or unlawful content",
+      "rule5": "Misrepresent the results of this service as scientifically validated or medically accurate"
+    },
+    "thirdParty": {
+      "heading": "Third-Party Services",
+      "body": "This service relies on third-party technologies and services, each subject to their own terms and policies:",
+      "mediapipe": "Google MediaPipe — used for client-side face landmark detection; subject to Google's Terms of Service",
+      "adsense": "Google AdSense — used to display advertisements; subject to Google's Advertising Policies",
+      "neon": "Neon PostgreSQL — used for anonymous analytics storage; subject to Neon's Terms of Service",
+      "vercel": "Vercel — used for hosting and deployment; subject to Vercel's Terms of Service"
+    },
+    "liability": {
+      "heading": "Limitation of Liability",
+      "body1": "To the maximum extent permitted by applicable law, QuizLab and its operators shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, goodwill, or other intangible losses, resulting from your access to or use of (or inability to access or use) the service.",
+      "body2": "In no event shall our total liability to you for all claims arising out of or relating to the use of or inability to use the service exceed the amount you paid us in the twelve months preceding the claim, or one hundred US dollars (USD $100), whichever is greater."
+    },
+    "indemnification": {
+      "heading": "Indemnification",
+      "body": "You agree to defend, indemnify, and hold harmless QuizLab and its operators, employees, and agents from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorney's fees) arising out of or relating to your violation of these Terms or your use of the service."
+    },
+    "governing": {
+      "heading": "Governing Law",
+      "body": "These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law provisions. Any disputes arising under these Terms shall be resolved through good-faith negotiation. If negotiation fails, disputes shall be subject to binding arbitration or the exclusive jurisdiction of courts in the applicable jurisdiction, as determined by QuizLab."
+    },
+    "changes": {
+      "heading": "Changes to Terms",
+      "body1": "We reserve the right to modify these Terms at any time. When we make changes, we will update the \"Last updated\" date at the top of this page. Significant changes may be communicated through a notice on the service.",
+      "body2": "Your continued use of the service after any changes to these Terms constitutes your acceptance of the new Terms. If you do not agree to the modified terms, you should discontinue using the service."
+    },
+    "contact": {
+      "heading": "Contact",
+      "body": "If you have any questions about these Terms of Service, please contact us at:"
+    }
+  },
+  "about": {
+    "pageTitle": "About - Animal Face Test",
+    "pageDescription": "Learn about Animal Face Test by QuizLab. AI-powered animal face matching using MediaPipe FaceLandmarker with 468 facial landmarks. Free, private, and available in 16 languages.",
+    "title": "About Animal Face Test",
+    "quizlab": {
+      "heading": "About QuizLab",
+      "body1": "QuizLab is an independent developer studio focused on creating fun, privacy-respecting interactive experiences on the web. Our mission is to build entertaining tools that leverage the latest advances in AI and machine learning — while keeping user data safe and the barrier to entry as low as possible.",
+      "body2": "Animal Face Test is one of our flagship projects, combining computer vision, personality archetypes, and cultural references into a shareable, multilingual experience. We believe great web experiences should be free, fast, and private."
+    },
+    "test": {
+      "heading": "About the Animal Face Test",
+      "body1": "The Animal Face Test is a free online personality quiz that analyzes your facial features and matches them to one of 12 animal archetypes. It's designed to be fun, shareable, and surprisingly insightful — giving you a playful way to reflect on your appearance and personality.",
+      "body2": "The test has been taken by users around the world and is available in 16 languages, including English, Korean, Japanese, Chinese, Spanish, French, German, Portuguese, Arabic, Hindi, and more. Whether you discover you're a loyal dog, a mysterious cat, or a rare dinosaur, every result comes with personality traits and celebrity matches.",
+      "body3": "The experience is designed to be instant and effortless: upload or take a selfie, wait a few seconds for the AI to analyze your facial geometry, and receive your animal match with a detailed personality breakdown."
+    },
+    "technology": {
+      "heading": "The Technology Behind It",
+      "body1": "Animal Face Test uses cutting-edge computer vision technology to analyze your face. Here is how it works, step by step:",
+      "step1": "You upload a photo or take a selfie directly in your browser.",
+      "step2": "Google MediaPipe FaceLandmarker — a state-of-the-art face mesh model running entirely in your browser via WebAssembly — detects and maps 468 distinct facial landmarks across your face.",
+      "step3": "These 468 points are converted into 10 proportional facial ratios: measurements like face width-to-height ratio, eye spacing, nose width, jaw width, and more.",
+      "step4": "The 10 ratios are compared against our 12 animal archetype profiles using weighted Euclidean distance. The closest match becomes your result, along with a percentage score.",
+      "body2": "Crucially, all of this computation happens inside your web browser. Your photo is never sent to a server. The only data that reaches our servers is the final animal match result (e.g., \"cat\"), which is stored anonymously for our public statistics page."
+    },
+    "animals": {
+      "heading": "The 12 Animal Types",
+      "body": "Our AI can match you to any of the following 12 animal archetypes, each representing a distinct set of facial proportions and personality traits:",
+      "list": {
+        "dog": "Dog — warm, loyal, and approachable",
+        "cat": "Cat — independent, mysterious, and graceful",
+        "fox": "Fox — clever, magnetic, and stylish",
+        "bear": "Bear — sturdy, warm, and reliable",
+        "rabbit": "Rabbit — cute, energetic, and curious",
+        "deer": "Deer — gentle, artistic, and sensitive",
+        "hamster": "Hamster — cheerful, hardworking, and adorable",
+        "wolf": "Wolf — intense, charismatic, and principled",
+        "penguin": "Penguin — funny, diligent, and devoted",
+        "owl": "Owl — wise, observant, and intellectual",
+        "squirrel": "Squirrel — energetic, resourceful, and quick-witted",
+        "dinosaur": "Dinosaur — unique, bold, and unforgettable"
+      }
+    },
+    "privacy": {
+      "heading": "Our Privacy Commitment",
+      "body1": "Privacy is a core design principle of Animal Face Test, not an afterthought. By running all face analysis directly in your browser, we ensure that your photos never leave your device. There is no photo upload, no cloud processing, and no storage of images.",
+      "body2": "We collect only minimal anonymous analytics: your animal result, country, and browser type. This data powers our public statistics page and helps us improve the service. We never sell your data to third parties."
+    },
+    "global": {
+      "heading": "Available in 16 Languages",
+      "body1": "Animal Face Test is fully translated into 16 languages to serve users around the world. The interface, animal descriptions, personality traits, and celebrity matches are all localized to make the experience feel native in each language.",
+      "body2": "Supported languages include: English, Korean (한국어), Japanese (日本語), Simplified Chinese (简体中文), Traditional Chinese (繁體中文), Spanish (Español), French (Français), German (Deutsch), Portuguese (Português), Italian (Italiano), Arabic (العربية), Hindi (हिन्दी), Thai (ภาษาไทย), Vietnamese (Tiếng Việt), Indonesian (Bahasa Indonesia), and Turkish (Türkçe)."
+    },
+    "free": {
+      "heading": "Free to Use",
+      "body": "Animal Face Test is completely free to use with no account registration, no subscription, and no hidden fees. The service is supported by non-intrusive display advertising. We believe access to fun, high-quality AI experiences should be available to everyone, everywhere."
+    }
+  },
+  "contact": {
+    "pageTitle": "Contact - Animal Face Test",
+    "pageDescription": "Contact the Animal Face Test team. Send feedback, data requests, or general inquiries to contact@quizlab.me.",
+    "title": "Contact Us",
+    "getInTouch": {
+      "heading": "Get in Touch",
+      "body1": "We would love to hear from you. Whether you have feedback on the animal results, a technical issue to report, or a question about how the service works, feel free to reach out.",
+      "body2": "Animal Face Test is maintained by a small team at QuizLab. We read every message and do our best to respond promptly."
+    },
+    "email": {
+      "heading": "Email",
+      "body": "The best way to contact us is by email. We typically respond within 2–3 business days."
+    },
+    "feedback": {
+      "heading": "We Welcome Your Feedback",
+      "body1": "Your input helps us improve Animal Face Test for everyone. We are particularly interested in hearing about:",
+      "item1": "Animal match results that seem inaccurate or surprising",
+      "item2": "Suggestions for new features or improvements to the test",
+      "item3": "Translation errors or cultural feedback for any of our 16 supported languages",
+      "item4": "Technical issues such as face detection failures or slow loading"
+    },
+    "dataRequests": {
+      "heading": "Privacy and Data Requests",
+      "body": "If you would like to exercise your privacy rights — including requesting deletion of your analytics data or asking about what data we hold — please email us at contact@quizlab.me. Include the approximate date and time of your test and your IP address so we can locate and remove your records. We handle all data requests in accordance with GDPR and CCPA requirements."
+    },
+    "faq": {
+      "heading": "Have a Quick Question?",
+      "body": "Many common questions are answered on our homepage, including how the AI works, why your photo is private, and what each animal type means. Check it out:",
+      "link": "Back to the Animal Face Test"
+    },
+    "response": {
+      "heading": "Response Times",
+      "body": "We aim to respond to all inquiries within 2–3 business days. For urgent technical issues affecting the service, we prioritize those and typically address them within 24 hours. Thank you for your patience and for using Animal Face Test."
+    }
   }
 }

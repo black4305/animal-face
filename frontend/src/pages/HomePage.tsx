@@ -1,8 +1,8 @@
-import { memo } from "react";
+import { memo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { Helmet } from "react-helmet-async";
-import { RefreshCw } from "lucide-react";
+import { RefreshCw, Plus, Minus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PhotoUpload } from "@/components/PhotoUpload";
 import { AnalysisLoader } from "@/components/AnalysisLoader";
@@ -56,6 +56,52 @@ const FloatingEmoji = memo(function FloatingEmoji({ emoji, index }: { emoji: str
     </motion.span>
   );
 });
+
+const FAQ_KEYS = ["1", "2", "3", "4", "5", "6", "7"] as const;
+
+function FaqSection() {
+  const { t } = useTranslation();
+  const [openIndex, setOpenIndex] = useState<string | null>(null);
+
+  function toggle(key: string) {
+    setOpenIndex((prev) => (prev === key ? null : key));
+  }
+
+  return (
+    <section className="faq-section w-full max-w-xl mt-4" aria-label="FAQ">
+      <h2 className="text-lg font-bold mb-3 text-center">{t("faq.heading")}</h2>
+      <div className="space-y-1">
+        {FAQ_KEYS.map((key) => {
+          const isOpen = openIndex === key;
+          return (
+            <div
+              key={key}
+              className="rounded-lg border border-border bg-card overflow-hidden"
+            >
+              <button
+                className="flex w-full items-center justify-between px-4 py-3 text-sm font-medium text-left hover:bg-muted/50 transition-colors"
+                onClick={() => toggle(key)}
+                aria-expanded={isOpen}
+              >
+                <span>{t(`faq.q${key}`)}</span>
+                {isOpen ? (
+                  <Minus className="size-4 shrink-0 text-muted-foreground" aria-hidden="true" />
+                ) : (
+                  <Plus className="size-4 shrink-0 text-muted-foreground" aria-hidden="true" />
+                )}
+              </button>
+              {isOpen && (
+                <div className="px-4 pb-3 text-sm text-muted-foreground leading-relaxed">
+                  {t(`faq.a${key}`)}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
 
 export function HomePage() {
   const { t } = useTranslation();
@@ -140,6 +186,8 @@ export function HomePage() {
                 <AdSlot />
 
                 <PhotoUpload onFile={analyze} />
+
+                <FaqSection />
               </motion.div>
             )}
 

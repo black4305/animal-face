@@ -20,14 +20,38 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://animal-face.quizlab.me/?lang=ru"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://animal-face.quizlab.me/?lang=tr"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://animal-face.quizlab.me/"/>
-    <lastmod>2026-03-03</lastmod>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://animal-face.quizlab.me/stats</loc>
-    <lastmod>2026-03-03</lastmod>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://animal-face.quizlab.me/about</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://animal-face.quizlab.me/privacy</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://animal-face.quizlab.me/terms</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://animal-face.quizlab.me/contact</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
