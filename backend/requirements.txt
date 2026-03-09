@@ -1,4 +1,4 @@
-mediapipe==0.10.21
+mediapipe==0.10.32
 numpy==1.26.4
 Pillow==11.1.0
 # NOTE: psycopg2-binary is used for Lambda deployment convenience.
